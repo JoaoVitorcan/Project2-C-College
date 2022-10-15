@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TOWELS.Models;
 
 namespace TOWELS.Data
 {
@@ -12,5 +13,8 @@ namespace TOWELS.Data
             : base(options)
         {
         }
+
+
+        public DbSet<Towel> Towels { get; set; }
     }
 }
